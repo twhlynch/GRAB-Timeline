@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GRAB Timeline</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="main.js" defer></script>
+</head>
+<body>
+    <nav>
+        <button id="longest" class="sort">longest</button>
+        <button id="start" class="sort active">start</button>
+        <button id="end" class="sort">end</button>
+        <button id="levels" class="sort">levels</button>
+        <button id="newest" class="sort">newest level</button>
+        <button id="oldest" class="sort">oldest level</button>
+        <button id="first" class="sort">join till first level</button>
+        <button id="record" class="sort">latest record</button>
+    </nav>
+    <div id="key">
+        <div class="join">Join</div>
+        <div class="create">Create Map</div>
+        <div class="update">Update Map</div>
+        <div class="record">Record</div>
+    </div>
+    <div id="loading">Loading..</div>
+    <div id="timeline"></div>
+</body>
+</html>

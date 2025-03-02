@@ -54,8 +54,9 @@ async function generate() {
 
     let records_dict = {};
     for (const record of leaderboards_json) {
-        const user_id = record[0];
-        const timestamp = record[1];
+        const parts = record.split(":");
+        const user_id = parts[0];
+        const timestamp = parts[1] * 100;
 
         if (user_id in records_dict) {
             records_dict[user_id] = [
